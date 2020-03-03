@@ -1,0 +1,179 @@
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 60px;
+  padding: 0 50px;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  min-width: 1024px; }
+  .header__logo {
+    padding: 10px 0; }
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.nav__item {
+  margin-left: 20px; }
+
+.nav__link {
+  position: relative;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 60px;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000; }
+
+.nav__link:hover {
+  color: #00acdc; }
+
+.nav .is-active {
+  margin-left: 0;
+  color: #00acdc; }
+
+.nav .is-active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 4px;
+  background-color: #00acdc;
+  border-radius: 8px; }
+
+.catalog {
+  min-width: 1024px; }
+
+.products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 944px;
+  margin: 50px auto; }
+
+.product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 403px;
+  width: 200px;
+  margin-bottom: 50px;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #f3f3f3;
+  border-radius: 5px; }
+  .product__item_link {
+    text-decoration: none;
+    color: #000; }
+  .product__photo {
+    display: block;
+    height: 134px;
+    width: 160px;
+    margin: 30px auto; }
+  .product__info_block {
+    display: block;
+    width: 170px;
+    margin: 15px auto; }
+  .product__name {
+    display: block;
+    height: 31px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px; }
+  .product__article {
+    font-size: 11px;
+    line-height: 13px;
+    margin: 4px 0 0; }
+  .product__rating {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 15px;
+    margin-top: 15px; }
+  .product__stars {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .product__stars .star__item {
+      width: 15px;
+      height: 15px;
+      margin-right: 4px;
+      background: url("../images/star.svg") no-repeat center; }
+      .product__stars .star__item:nth-child(-n+4) {
+        background: url("../images/star-active.svg") no-repeat center; }
+  .product__reviews {
+    font-size: 11px;
+    line-height: 15px; }
+  .product__price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    font-size: 12px;
+    line-height: 13px;
+    margin: 20px 0; }
+    .product__price_title {
+      margin: 0; }
+    .product__price_unit {
+      margin: 0;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px; }
+  .product__buy_link {
+    display: block;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 170px;
+    height: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 12px;
+    background: #00acdc;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase; }
+    .product__buy_link:hover {
+      background-color: #fff;
+      color: #00acdc;
+      border: 1px solid #00acdc; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0; }
+
+/*# sourceMappingURL=main.css.map */
