@@ -31,13 +31,37 @@
   &__item-link {
     text-decoration: none;
     color: $textColor;
+    transition: 0.3s;
+
+    &:hover {
+      color: $mainColor;
+    }
   }
 
-  &__photo {
-    display: block;
-    height: 134px;
-    width: 160px;
-    margin: 30px auto;
+  .photo-item {
+    display: flex;
+    justify-content: center;
+    padding: 14px 0;
+
+    &__img {
+      display: block;
+      box-sizing: border-box;
+      height: 166px;
+      width: 166px;
+
+      padding: 13px 0;
+      border: 3px solid transparent;
+      transition: transform 1s;
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+        border: 3px solid #f3f3f3;
+        border-radius: 3px;
+
+      }
+    }
+
   }
 
   &__info {
@@ -130,6 +154,7 @@
     color: white;
     font-weight: bold;
     line-height: 38px;
+    transition: 0.5s;
 
     &:hover {
       background-color: #fff;
